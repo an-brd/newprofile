@@ -1,0 +1,59 @@
+*{border:0; margin:0; overflow-x: hidden;
+
+}
+
+.header {
+	width:100vw;
+	height:100vh;
+	background-image:url('purple-background.jpg');
+	/* background-color: rgb(59, 4, 59); */
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+#header-words {
+	font-family: 'Courier New', Courier, monospace;
+	/* font-size:50px; */
+	color:silver;
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+	top:50vh;
+	right:8vw;
+}
+
+.nav-bar {
+	display:flex;
+	position:sticky;
+	justify-content: space-around;
+	/* height:15vh; */
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	background-color: rgb(185, 125, 185);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 25px;
+}
+
+.nav-section {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	padding:1em;
+	background-color: rgb(124, 75, 124);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 25px;
+}
+
+#nav-span1 {
+	border:1px solid black;
+	height:75vh;
+	overflow-y:hidden;
+	justify-content:left;
+}
+
+#nav-span2 {
+	border:1px solid black;
+	height:max-content;
+	overflow-y:hidden;
+	justify-content:right;
+}
