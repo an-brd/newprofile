@@ -6,24 +6,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anna New Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="script.ts"></script>
+
+	<!-- FONT FOR MY NAME ON COVER: -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	
 	<header class=header>
-		<div id=header-words>
+		<div class=header-words>
 			<h1>Anna Bradnum</h1>
-			<h2>software engineer</h2>
+			<h2 id="software-engineer">software engineer</h2>
 		</div>
 	</header>
 
 	<div class=background>
 		<nav class=nav-bar>
 			<span>
-				<a href="#" target="_blank">Projects</a>
+				<a href="#">Projects</a>
+				<!-- target="_blank" -->
 			</span>
-			<span>About</span>
-			<span>Resume</span>
-			<span>Contact</span>
+			<span>
+				<a href="#">About</a>
+			</span>
+			<span>
+				<a href="#">Resume</a>
+				</span>
+			<span>
+				<a href="#">Contact</a>
+			</span>
 		</nav>
 
 		<div id=projects-span>
@@ -44,7 +58,7 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer class=footer-class>
 		<span>Copyright Anna Bradnum 2021</span>
 	</footer>
 </body>
