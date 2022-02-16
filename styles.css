@@ -270,8 +270,9 @@
 .projects-on-page {
 	display:flex;
 	flex-wrap: wrap;
-	gap:4em;
+	gap:6em;
 	margin-left: 2.25%;
+	width:95vw;
 }
 
 .projects-page-imgs {
