@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anna New Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.ts"></script>
+	<script src="script.js" defer></script>
 
 	<!-- FONT FOR MY NAME ON COVER: -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,77 +16,175 @@
 </head>
 <body>
 	
-	<header class=header>
+	<!-- HEADER WITH MY NAME IN IT -->
+	<section class="header background">
 		<div class=header-words>
 			<div id="anna-header1">Anna Bradnum</div>
 			<div id="software-engineer">Software Engineer</div>
 		</div>
-	</header>
+	</section>
 
-	<div class=background>
-		<nav class=nav-bar>
-			<span>
-				<a href="#">About</a>	
-				<!-- target="_blank" -->
+	<!-- THIS DIV CONTAINS EVERYTHING BETWEEN THE HEADER AND THE FOOTER -->
+	<div class="background">
+		<nav class="nav-bar">
+			<span class="logo">
+				AB
 			</span>
 			<span>
-				<a href="#">Projects</a>
+				<a onclick="displaySection('about-page')">About</a>	
+			</span>
+			<span>
+				<a onclick="displaySection('projects-page')">Projects</a>
 			</span>
 			<span>
 				<a href="#">CV</a>
-				</span>
+			</span>
 			<span>
-				<a href="#">Contact</a>
+				<a onclick="displaySection('contact-whole-page')">Contact</a>
 			</span>
 		</nav>
 
-		<div class=nav-section id=about-div>
-			<div id="about-img">
-				<a href="#"><img src="avatar.jpg" alt="Avatar" target="_blank"></a>
+		<!-- ABOUT SECTION -->
+		<section class= "main-page-sections">
+			<div class="img-div-to-left">
+				<a href="#"><img class="img-div" src="me-main-page.jpeg" alt="Anna Bradnum" target="_blank"></a>
 			</div>
-			<div id="about-words">
-				<h1>About</h1>
-				<h2>Welcome to my little corner of the internet!</h2>
-				<p>Hi! I'm Anna.</p>
-				<p>Click here to find out more about me.</p>
+			<div class="heading-for-main-sections">
+				<p>About</p>
 			</div>
-		</div>
+			<!-- <div id="about-overlay">
+				<p id=under-words>Hey! 👋 Welcome to my little corner of the internet!</p>
+			</div> -->
+		</section>
 
-		<div class= nav-section id=projects-div>
-			<div id="projects-word">
-				<h1>Projects</h1>
+		<!-- PROJECT SECTION -->
+		<section class= "main-page-sections">
+			<div class="heading-for-main-sections">
+				<p>Projects</p>
 			</div>
-			<div id="projects-pic">
-				<a href="#"><img src="proj.png" alt="Projects portfolio" target="_blank"></a>
+			<div class="img-div-to-right">
+				<a href="#"><img class="img-div" src="proj.png" alt="Projects portfolio" target="_blank"></a>
 			</div>
-		</div>
-		<div id="projects-overlay">
+		</section>
+		<!-- <div id="projects-overlay">
 			<h2> Welcome to my projects!</h2>
 			<p>These are projects that I've created, or worked on as part of a group.</p>
 			<p>Come and see what I've been part of!</p>
-		</div>
+		</div> -->
 		
-		<div class=nav-section id=resume-div>
-			<div id="resume-pic">
-				<a href="#"><img src="resume.jpg" alt="Resume" target="_blank"></a>
+		<!-- CV SECTION -->
+		<section class="main-page-sections">
+			<div class="img-div-to-left">
+				<a href="#"><img class="img-div" src="resume.jpg" alt="Resume" target="_blank"></a>
 			</div>
-			<div id="resume-words">
-				<h1>CV</h1>
+			<div class="heading-for-main-sections">
+				<p>CV</p>
 			</div>
-		</div>
+		</section>
 
-		<div class=nav-section id=contact-div>
-			<div id="contact-words">
-				<h1>Contact</h1>
+		<!-- CONTACT SECTION -->
+		<section class="main-page-sections" id="no-bottom-margin">
+			<div class="heading-for-main-sections">
+				<p>Contact</p>
 			</div>
-			<div id="contact-pic">
-				<!-- <a href="#"><img src="contact.jpg" alt="Contact" target="_blank"></a> -->
+			<div class="img-div-to-right">
+				<a href="#"><img class="img-div" src="contact-image.png" alt="Contact" target="_blank"></a>
 			</div>
-		</div>
+		</section>
+
+		<!-- HERE ARE ALL THE PAGES -->
+		<section class="pages-style" id="about-page">
+			<div class="page-headings">
+				About
+			</div>
+			<div class="words-on-about-page">
+				<p>
+					Hi there! 👋 I'm Anna.
+				</p>
+				<p>
+					Welcome to my little corner of the internet!
+				</p>
+				<p>
+					Born and raised in Zimbabwe, a true African at heart, I care deeply about people.  And so, I decided to study psychology at Tilburg University in the Netherlands.  I've always been curious about the way the world works, and not only how it works, but why it works that way specifically - and that includes how people work, and why they work that way.
+				</p>
+				<p>
+					When the pandemic hit, I too went through the classic reassessment of my life, and decided that I wanted a change.  This led me to tech - specifically software engineering.  I had been doing some graphic design for my sister and realised how much I loved being creative as well as technical on the computer, and thought I should research this further - and the internet answered with a resounding “software engineering is the place for you!”  So, I looked around to see what I could do to make this happen and explore if this was actually a good fit for me, and I was referred to a Generation UK & Ireland Tech Talent Accelerator program - a 6-week bootcamp that would teach me the specifics of HTML, CSS, and JavaScript (with TypeScript thrown in there for good measure).
+				</p>
+				<p>
+					What I didn't realise was, this would change my life.  Firstly, I was given the opportunity to pursue something that genuinely sparked my interest and reignited a fascination in life that I hadn't felt in years.  I was given the opportunity to create some wonderful projects (check them out here!), and be part of two particularly big projects - the first collaborating to create a snowball fight game, using JavaScript, TypeScript, and a whole bunch of Git too, and the second, acting as Scrum Master to develop a construction simulation game, that largely resembles Jenga, to see how many springs you can remove from a structure (with applied gravity on all the springs) before the whole thing collapses.  This also allowed me to really soar with my maths and physics abilities, as well as to conceive tangible possibilities of what this could look like.  These were both group projects, allowing me to work with some incredible people, and giving me the chance to experience what working in the tech industry would really be like.  And let me tell you, I loved it.
+				</p>
+			</div>
+		</section>
+		<section class="pages-style" id="projects-page">
+			<div class="page-headings">
+				Projects
+			</div>
+			<div class="projects-on-page">
+				<div>
+					<img class="projects-page-imgs" src="snow.jpg" alt="snowball fight" width="200" height="200">
+					<p>Snowball Fight Multiplayer Game</p>
+				</div>
+				<div>
+					<img class="projects-page-imgs" src="Renge.png" alt="Renge game" width="200" height="200">
+					<p>Renge Game</p>
+				</div>
+				<div>
+					<img class="projects-page-imgs" src="treasure.jpg" alt="Treasure Hunt" width="200" height="200">
+					<p>Treasure Hunt</p>
+				</div>
+				<div>
+					<img class="projects-page-imgs" src="unicorn.jpg" alt="Unicorn Race" width="200" height="200">
+					<p>Unicorn Race</p>
+				</div>
+				<div>
+					<img class="projects-page-imgs" src="coffee.jpg" alt="Coffee Fund" width="200" height="200">
+					<p>Coffee fund</p>
+					<p>Photo by Mike Kenneally on Unsplash</p>
+				</div>
+				<div>
+					<img class="projects-page-imgs" src="cars1.jpg" alt="cars project" width="200" height="200">
+					<p>Cars project</p>
+					<p>Photo by Uygar Kilic on Unsplash</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="pages-style" id="contact-whole-page">
+			<div class="page-headings">
+				Contact
+			</div>
+			<div class=contact-page>
+				<div>
+					<div>
+						<img src="linkedin-logo.png" alt="LinkedIn" width="200" height="200">
+					</div>
+					<div>
+						LinkedIn
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="github-logo.png" alt="Github" width="200" height="200">
+					</div>
+					Github Profile
+				</div>
+				<div>
+					<div>
+						<div>
+							<img src="email-logo.png" alt="Email" width="200" height="200">
+						</div>	
+						Email
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 
+	
+
+<!-- FOOTER DIV -->
 	<div class=footer-class>
-		Copyright Anna Bradnum 2021
+		Copyright © Anna Bradnum 2022
 	</div>
 </body>
 </html>
