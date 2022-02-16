@@ -28,7 +28,7 @@
 	<div class="background">
 		<nav class="nav-bar">
 			<span class="logo">
-				AB
+				<a onclick="">AB</a>
 			</span>
 			<span>
 				<a onclick="displaySection('about-page')">About</a>	
@@ -37,7 +37,9 @@
 				<a onclick="displaySection('projects-page')">Projects</a>
 			</span>
 			<span>
-				<a href="#">CV</a>
+				<a href="https://drive.google.com/file/d/1knoRE8fgYWwLRLeGFRPceUIYADAuvVVU/view?usp=sharing" target="_blank">
+					CV
+				</a>
 			</span>
 			<span>
 				<a onclick="displaySection('contact-whole-page')">Contact</a>
@@ -45,12 +47,16 @@
 		</nav>
 
 		<!-- ABOUT SECTION -->
-		<section class= "main-page-sections">
+		<section class= "main-page-sections" id="about-section">
 			<div class="img-div-to-left">
-				<a href="#"><img class="img-div" src="me-main-page.jpeg" alt="Anna Bradnum" target="_blank"></a>
+				<a onclick="displaySection('about-page')">
+					<img class="img-div" src="me-main-page.jpeg" alt="Anna Bradnum" target="_blank">
+				</a>
 			</div>
 			<div class="heading-for-main-sections">
-				<p>About</p>
+				<a onclick="displaySection('about-page')">
+					<p>About</p>
+				</a>
 			</div>
 			<!-- <div id="about-overlay">
 				<p id=under-words>Hey! 👋 Welcome to my little corner of the internet!</p>
@@ -60,10 +66,14 @@
 		<!-- PROJECT SECTION -->
 		<section class= "main-page-sections">
 			<div class="heading-for-main-sections">
-				<p>Projects</p>
+				<a onclick="displaySection('projects-page')">
+					<p>Projects</p>
+				</a>
 			</div>
 			<div class="img-div-to-right">
-				<a href="#"><img class="img-div" src="proj.png" alt="Projects portfolio" target="_blank"></a>
+				<a onclick="displaySection('projects-page')">
+					<img class="img-div" src="proj.png" alt="Projects portfolio">
+				</a>
 			</div>
 		</section>
 		<!-- <div id="projects-overlay">
@@ -75,7 +85,8 @@
 		<!-- CV SECTION -->
 		<section class="main-page-sections">
 			<div class="img-div-to-left">
-				<a href="#"><img class="img-div" src="resume.jpg" alt="Resume" target="_blank"></a>
+				<a href="https://drive.google.com/file/d/1knoRE8fgYWwLRLeGFRPceUIYADAuvVVU/view?usp=sharing" target="_blank">
+					<img class="img-div" src="resume.jpg" alt="Resume" target="_blank"></a>
 			</div>
 			<div class="heading-for-main-sections">
 				<p>CV</p>
@@ -85,10 +96,14 @@
 		<!-- CONTACT SECTION -->
 		<section class="main-page-sections" id="no-bottom-margin">
 			<div class="heading-for-main-sections">
-				<p>Contact</p>
+				<a onclick="displaySection('contact-whole-page')">
+					<p>Contact</p>
+				</a>
 			</div>
 			<div class="img-div-to-right">
-				<a href="#"><img class="img-div" src="contact-image.png" alt="Contact" target="_blank"></a>
+				<a onclick="displaySection('contact-whole-page')">
+					<img class="img-div" src="contact-image.png" alt="Contact">
+				</a>
 			</div>
 		</section>
 
@@ -163,26 +178,34 @@
 			</div>
 			<div class=contact-page>
 				<div>
-					<div>
-						<img src="linkedin-logo.png" alt="LinkedIn" width="200" height="200">
-					</div>
-					<div>
-						LinkedIn
-					</div>
+					<a href="https://www.linkedin.com/in/anna-bradnum/" target="_blank">
+						<div>
+							<img src="linkedin-logo.png" alt="LinkedIn" width="200" height="200">
+						</div>
+						<p>
+							LinkedIn
+						</p>
+					</a>
 				</div>
 				<div>
-					<div>
-						<img src="github-logo.png" alt="Github" width="200" height="200">
-					</div>
-					Github Profile
+					<a href="https://github.com/an-brd" target="_blank">
+						<div>
+							<img src="github-logo.png" alt="Github" width="200" height="200">
+						</div>
+						<p>
+							Github Profile
+						</p>
+					</a>
 				</div>
 				<div>
-					<div>
+					<a href="mailto:anna@bradnum.com" target="_blank">
 						<div>
 							<img src="email-logo.png" alt="Email" width="200" height="200">
-						</div>	
-						Email
-					</div>
+						</div>
+						<p>
+							Email
+						</p>
+					</a>
 				</div>
 			</div>
 		</section>
