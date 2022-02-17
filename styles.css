@@ -253,6 +253,11 @@
 }
 
 /* ABOUT */
+
+.words-and-pics-about-page {
+	display: flex;
+}
+
 .words-on-about-page {
 	padding-left: 3em;
 	width: 60vw;
@@ -264,6 +269,10 @@
 
 .words-on-about-page > p {
 	margin-bottom: 0.5em;
+}
+
+.pics-div-about-page {
+	width: 50vw;
 }
 
 .bold-text {
