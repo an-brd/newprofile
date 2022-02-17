@@ -255,15 +255,19 @@
 /* ABOUT */
 .words-on-about-page {
 	padding-left: 3em;
-	width: 50vw;
+	width: 60vw;
 	font-family: Aileron-Thin;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	letter-spacing: 2px;
 	padding-bottom: 1.25%;
 }
 
 .words-on-about-page > p {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
+}
+
+.bold-text {
+	font-weight: bold;
 }
 
 /* PROJECTS */
