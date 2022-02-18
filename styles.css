@@ -27,6 +27,11 @@
 	src: url(Aileron-Thin.otf);
 }
 
+@font-face {
+	font-family: khand;
+	src: url(khand.ttf);
+}
+
 /* 	============
 	main layout
 	============ */
