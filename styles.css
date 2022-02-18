@@ -201,6 +201,7 @@
 
 	.img-div {
 		height:100%;
+		justify-content: center;
 	}
 
 	#no-bottom-margin {
