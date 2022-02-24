@@ -286,17 +286,37 @@
 }
 
 /* PROJECTS */
-.projects-on-page {
+.projects-div-page {
 	display:flex;
 	flex-wrap: wrap;
 	gap:6em;
-	margin-left: 2.25%;
-	width:95vw;
+	margin-top: 2%;
+	margin-left: 6%;
+	padding-bottom: 1.25%;
+	width:91vw;
 }
 
 .projects-page-imgs {
-	width: 25vw;
-	/* height: 245px; */
+	width: 23vw;
+	border-radius: 25px;
+	box-shadow: 1px 1px 20px 15px rgba(255, 255, 255, 0.4);
+}
+
+.projects-page-imgs:hover {
+	transform: scale(1.1);
+}
+
+.projects-titles {
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 3.5;
+}
+
+.photo-credits {
+	text-align: center;
+	font-family: Aileron-Thin;
+	font-size: 12px;
+	letter-spacing: 1.5px;
 }
 
 /* CONTACT */
