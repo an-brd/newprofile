@@ -32,6 +32,46 @@
 	src: url(khand.ttf);
 }
 
+@font-face {
+	font-family: gunny-rewritten;
+	src: url(gunny-rewritten.ttf);
+}
+
+@font-face {
+	font-family: just-signature;
+	src: url("just-signature.ttf");
+}
+
+@font-face {
+	font-family: whatever-it-takes;
+	src: url("whatever-it-takes.ttf");
+}
+
+@font-face {
+	font-family: Artfully;
+	src: url("Artfully.ttf");
+}
+
+@font-face {
+	font-family: Andragogy;
+	src: url("Andragogy.ttf");
+}
+
+@font-face {
+	font-family: AmanahGuru;
+	src: url("AmanahGuru.ttf");
+}
+
+@font-face {
+	font-family: LiberationMono;
+	src: url("LiberationMono.ttf");
+}
+
+@font-face {
+	font-family: Allura;
+	src: url(Allura.ttf);
+}
+
 /* 	============
 	main layout
 	============ */
@@ -43,9 +83,10 @@
 }
 
 	.header-words {
-		font-family: khand;
-		src: url(khand.ttf);
+		/* font-family: khand;
+		src: url(khand.ttf); */
 		font-size: 2.5em;
+		font-family: AmanahGuru;
 		color: white;
 		display:flex;
 		flex-direction:column;
@@ -56,8 +97,10 @@
 	}
 
 	#anna-header1 {
-		font-size:2em;
-		line-height: 1.35em;
+		font-size:2.8em;
+		line-height: 0.8em;
+		letter-spacing: .01em;
+		font-weight: lighter;
 
 		animation: fadeIn linear 7s;
 		-webkit-animation: fadeIn linear 7s;
@@ -84,7 +127,7 @@
 	#software-engineer {
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 0.8em;
-		padding-left: 3rem;
+		padding-left: 5.3rem;
 		padding-top: 0;
 		display: inline-block;
 		width: auto;
@@ -119,6 +162,7 @@
 	display:flex;
 	justify-content: space-around;
 	padding-top:0.5em;
+	padding-bottom: 0.25em;
 	background-color: #130f40;
 	background-image: linear-gradient(#000000, #151142, #000000);
 	color: white;
@@ -126,6 +170,9 @@
 	top:0;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 25px;
+	/* font-family: "LiberationMono"; */
+	/* font-family: gunny-rewritten;
+	font-size: 37px; */
 }
 
 	a:link {
@@ -146,10 +193,12 @@
 	}
 
 	.logo {
-		font-family: khand;
+		font-family: AmanahGuru;
+		font-size: 3.5em;
 		margin-left: -1.5em;
 		margin-right: -5em;
-		font-size: 0.7em;
+		padding-top: 0.25em;
+		font-size: 0.9em;
 	}
 
 
@@ -160,6 +209,8 @@
 		padding:1em;
 		background-color: #130f40;
 		font-family: 'Courier New', Courier, monospace;
+		/* font-family: 'Montserrat Alternates', sans-serif; */
+		/* font-family: Aileron-Thin; */
 		border:1px solid black;
 		height:75vh;
 		width:96vw;
@@ -204,9 +255,6 @@
 		justify-content: center;
 	}
 
-	#no-bottom-margin {
-		margin-bottom: 0%;
-	}
 
 /* FOR OVERLAY, SO CHECK IF IT'S BEING USED */
 /* #under-words {
@@ -237,9 +285,9 @@
 /* } */
 
 
-/* 	======
-	pages
-	====== */
+/* 	===============
+	pages sections
+	=============== */
 .pages-style {
 	background-color: #130f40;
 	background-image: radial-gradient(#130f40, #000000);
@@ -253,36 +301,147 @@
 	top: 1em;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
-	font-family: khand;
-	src: url(khand.ttf);
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 3em;
 }
 
+/* 	==============
+	pages divs
+	============== */
+
 /* ABOUT */
 
-.words-and-pics-about-page {
-	display: flex;
-}
-
 .words-on-about-page {
-	padding-left: 3em;
-	width: 60vw;
-	font-family: Aileron-Thin;
-	font-size: 1.25em;
-	letter-spacing: 2px;
+	background-color: rgba(16,13,53,0.5);
+	background-image: radial-gradient(rgba(16,13,53,1), #0000008c);
+	min-height: 100vh;
+	width: 98.5vw;
+	padding-top: 15vh;
+	padding-left: 3.75em;
+	padding-right: 3.75em;
 	padding-bottom: 1.25%;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 1.25em;
+	line-height: 1.7;
+	letter-spacing: 2.5px;
+	text-align: center;
+	align-items: center;
 }
 
 .words-on-about-page > p {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.65em;
 }
 
-.pics-div-about-page {
-	width: 50vw;
+.tldr-heading {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: larger;
+}
+
+#no-bottom-margin {
+	margin-bottom: 0;
+}
+
+#no-top-padding {
+	padding-top: 0;
+}
+
+.footnote {
+	font-size: small;
+	padding-top: 3.5em;
+	margin-bottom: 0;
 }
 
 .bold-text {
 	font-weight: bold;
+}
+
+.larger-text {
+	font-size: larger;
+}
+
+.italic-text {
+	font-style: italic;
+}
+
+.part-1 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: smaller;
+	padding-top:-5;
+}
+
+#first-banner-about {
+	padding-top: 3.1em;
+}
+
+#about-me {
+	font-family: Aileron-Thin;
+	font-size: 1.5em;
+	padding-top: 42vh;
+	height: 92vh;
+}
+
+#third-blurb {
+	padding-top: 7em;
+}
+
+#fourth-blurb {
+	padding-top: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	/* font-size: 1.225em; */
+	line-height: 1.5em;
+}
+
+#fourth-blurb > p {
+	margin-bottom: 0.65em;
+}
+
+#reduced-top-padding {
+	padding-top: 2em;
+}
+
+#quote-font {
+	padding-left: 0em;
+	padding-right: 0em;
+	font-family: whatever-it-takes;
+	font-size: 1.75em;
+	letter-spacing: 0.15em;
+	line-height: 1em;
+}
+
+.blank-div {
+	height: 100vh;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.first-pic {
+	/* background-color:rgba(255,255,255,0.1); */
+	background-image: url("bench.jpg");
+}
+
+.second-pic {
+	background-image: url("mukuvisi1.JPG");
+}
+
+.third-pic {
+	background-image: url("piano.jpeg");
+}
+
+.fourth-pic {
+	background-image: url("autumn.JPG");
+}
+
+.fifth-pic {
+	background-image: url("garden.jpeg");
+}
+
+.banner-img {
+	width: 98.5vw;
 }
 
 /* PROJECTS */
@@ -299,7 +458,7 @@
 .projects-page-imgs {
 	width: 23vw;
 	border-radius: 25px;
-	box-shadow: 1px 1px 20px 15px rgba(255, 255, 255, 0.4);
+	box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.4);
 }
 
 .projects-page-imgs:hover {
@@ -328,9 +487,15 @@
 	align-items: center;
 }
 
+.contact-img {
+	border-radius: 25px;
+	box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
 /* FOOTER */
 .footer-class {
 	display:flex;
+	flex-direction: column;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size:3vh;
 	color: black;
@@ -339,4 +504,12 @@
 	align-items: center;
 	padding-bottom:1%;
 	padding-top: 0.5%;
+}
+
+.footer-class > p {
+	color:#000000;
+}
+
+#amdg {
+	font-style: italic;
 }
