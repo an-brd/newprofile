@@ -1,12 +1,6 @@
 "use strict"
 let sections=document.getElementsByTagName("section")
 
-// hideSections()
-// displaySection("about-page")
-
-
-// hideSections()
-// displaySection ("s1")
 function hideSections() {
     for (let i=0;i<sections.length;i++) {
         sections[i].style.display="none"
